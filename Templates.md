@@ -1,0 +1,15 @@
+<li class="card book-item" data-id="${id}">
+  <h4>${id} - ${title}</h4>
+  <p>${desc}</p>
+  <p>${author}</p>
+</li>
+<li class="card user-item" data-id="${id}">
+  <img
+    src="https://source.unsplash.com/500x500/?random=1&portret,man,woman"
+    alt="#"
+    class="user-avatar"
+  />
+  <h3>${name}</h3>
+  <p>${email}</p>
+  <p>${phone}</p>
+</li>
