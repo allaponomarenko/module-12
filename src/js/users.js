@@ -79,12 +79,13 @@ async function onUserDelete(e) {
   e.target.reset();
 }
 
-// ============================================================
+// ===================================================
 
 function userTemplate({ id, name, email, phone }) {
   return `<li class="card user-item" data-id="${id}">
   <img
-    src="https://source.unsplash.com/500x500/?random=${id}&portret,man,woman"
+    src="https://i.pravatar.cc/200?img=${(id % 70) + 1}" 
+    //адреса вчителя: src="https://source.unsplash.com/500x500/?random=${id}&portret,man,woman"
     alt="#"
     class="user-avatar"
   />

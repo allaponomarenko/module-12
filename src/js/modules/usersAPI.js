@@ -7,6 +7,7 @@ const axios = Axios.create({
 
 //! cтворення екземпляру ===================================================
 
+/*
 export class UsersAPI_OLD {
   constructor() {}
 
@@ -95,7 +96,7 @@ export class UsersAPI_OLD {
     }
   }
 }
-
+*/
 export class UsersAPI {
   constructor() {}
 
