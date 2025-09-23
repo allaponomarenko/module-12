@@ -2,11 +2,10 @@ import Axios from 'axios';
 
 const axios = Axios.create({
   baseURL: 'http://localhost:3000/users',
-  headers: { api: 'foobar' },
-  params: {
-    api_key: 'efsfsefsefsefsef',
-  },
+  headers: { 'X-Custom-Header': 'foobar' },
 });
+
+//! cтворення екземпляру ===================================================
 
 export class UsersAPI_OLD {
   constructor() {}

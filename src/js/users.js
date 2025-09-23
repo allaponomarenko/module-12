@@ -10,7 +10,7 @@ const refs = {
 const usersAPI = new UsersAPI();
 // ============================================================
 
-refs.createUserForm.addEventListener('submit', onUserCreate);
+refs.createUserForm.addEventListener('submit', onUserCreate); //прослуховувачі подій
 refs.updateUserForm.addEventListener('submit', onUserUpdate);
 refs.resetUserForm.addEventListener('submit', onUserReset);
 refs.deleteUserForm.addEventListener('submit', onUserDelete);

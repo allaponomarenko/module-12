@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "vite",
+    "dev": "concurrently \"vite --open\" \"json-server --watch db.json --port 3000\"",
     "build": "vite build",
-    "preview": "vite preview",
-    "push": "git add -A && git commit -m \"update\" && git push",
-    "dev": "vite"
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -20,11 +18,13 @@
   },
   "homepage": "https://github.com/GoITteacher/js-example#readme",
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "glob": "^8.1.0",
+    "json-server": "^1.0.0-beta.3",
     "vite": "^4.0.5"
   },
   "dependencies": {
-    "axios": "^1.6.7",
+    "axios": "^1.12.2",
     "basiclightbox": "^5.0.4",
     "lodash": "^4.17.21",
     "simplelightbox": "^2.14.2",
